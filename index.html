@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ohahase — Opening new paths for First Nations, Inuit and Métis entrepreneurs</title>
+<meta name="description" content="Ohahase helps Indigenous businesses find the government funding and contracts they can actually win, and explains why each one fits. A service of Gemini Matrix Inc., an Indigenous-owned company in Ohsweken, Ontario. Launching fall 2026." />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ohahase — Opening new paths for First Nations, Inuit and Métis entrepreneurs" />
+<meta property="og:description" content="Find the government funding and contracts worth your time, matched to your business. Indigenous-owned, built in Ohsweken. Launching fall 2026." />
+<meta property="og:url" content="https://ohahase.ca/" />
+<meta property="og:site_name" content="Ohahase" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><path d='M22 70 Q50 18 78 70' stroke='white' stroke-width='11' fill='none' stroke-linecap='round'/></svg>" />
+
+<style>
+  :root {
+    color-scheme: light;
+    --pine: #4f46e5;
+    --surface: #ffffff;
+    --surface-muted: #f8fafc;
+    --surface-sunken: #f1f5f9;
+    --border: #e2e8f0;
+    --border-strong: #cbd5e1;
+    --text-primary: #0f172a;
+    --text-body: #334155;
+    --text-muted: #475569;
+    --text-subtle: #64748b;
+    --shadow-lg: 0 10px 28px rgba(15, 23, 42, 0.08);
+    --shadow-sm: 0 8px 22px rgba(15, 23, 42, 0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --pine: #818cf8;
+      --surface: #111827;
+      --surface-muted: #1a2333;
+      --surface-sunken: #1f2937;
+      --border: #2a3441;
+      --border-strong: #3a4759;
+      --text-primary: #f1f5f9;
+      --text-body: #cbd5e1;
+      --text-muted: #94a3b8;
+      --text-subtle: #7c8aa0;
+      --shadow-lg: 0 10px 28px rgba(0, 0, 0, 0.4);
+      --shadow-sm: 0 8px 22px rgba(0, 0, 0, 0.3);
+      --page-bg: #0b1120;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    background: var(--page-bg, var(--surface));
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--page-bg, var(--surface));
+    color: var(--text-body);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 28px 20px 64px;
+  }
+
+  header.site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-bottom: 34px;
+  }
+
+  .wordmark {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 19px;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+
+  .mark {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    background: var(--pine);
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+
+  .mark svg { width: 19px; height: 19px; display: block; }
+
+  .status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    background: var(--surface-muted);
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--text-muted);
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--pine);
+    flex-shrink: 0;
+  }
+
+  .card {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 24px;
+    padding: 30px 28px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 20px;
+  }
+
+  .card.hero {
+    padding: 38px 32px 34px;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .eyebrow {
+    margin: 0 0 14px;
+    font-size: 12.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--pine);
+  }
+
+  h1 {
+    margin: 0 0 16px;
+    font-size: clamp(30px, 5.2vw, 46px);
+    line-height: 1.13;
+    letter-spacing: -0.022em;
+    font-weight: 640;
+    color: var(--text-primary);
+  }
+
+  h1 .accent { color: var(--pine); font-weight: 750; }
+
+  h2 {
+    margin: 0 0 12px;
+    font-size: 21px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    font-weight: 640;
+    color: var(--text-primary);
+  }
+
+  .lede {
+    margin: 0;
+    font-size: 17.5px;
+    line-height: 1.65;
+    color: var(--text-body);
+    max-width: 66ch;
+  }
+
+  p { margin: 0 0 14px; max-width: 72ch; }
+  p:last-child { margin-bottom: 0; }
+
+  .meaning {
+    margin-top: 24px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border);
+    font-size: 15.5px;
+    color: var(--text-muted);
+    max-width: 68ch;
+  }
+
+  .meaning em { color: var(--text-primary); font-style: italic; font-weight: 500; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .tile {
+    border: 1px solid var(--border);
+    background: var(--surface-muted);
+    border-radius: 16px;
+    padding: 18px 18px 16px;
+  }
+
+  .tile h3 {
+    margin: 0 0 7px;
+    font-size: 15px;
+    font-weight: 640;
+    color: var(--text-primary);
+    letter-spacing: -0.005em;
+  }
+
+  .tile p {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+  }
+
+  .card.sources {
+    background: var(--surface-muted);
+    border-color: var(--border-strong);
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: opacity 0.15s ease, background 0.15s ease;
+  }
+
+  .btn-primary {
+    background: var(--pine);
+    color: #ffffff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .btn-primary { color: #0b1120; }
+  }
+
+  .btn-primary:hover { opacity: 0.9; }
+
+  .btn-secondary {
+    background: var(--surface);
+    border-color: var(--border-strong);
+    color: var(--text-primary);
+  }
+
+  .btn-secondary:hover { background: var(--surface-sunken); }
+
+  a.inline {
+    color: var(--pine);
+    font-weight: 550;
+    text-decoration: none;
+  }
+
+  a.inline:hover { text-decoration: underline; }
+
+  footer.site {
+    margin-top: 34px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--text-subtle);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  footer.site p { margin: 0; }
+
+  @media (max-width: 560px) {
+    .card { padding: 24px 20px; border-radius: 20px; }
+    .card.hero { padding: 30px 22px 28px; }
+    .wrap { padding: 22px 16px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <span class="wordmark">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="none"><path d="M22 70 Q50 18 78 70" stroke="white" stroke-width="11" stroke-linecap="round"/></svg>
+      </span>
+      Ohahase
+    </span>
+    <span class="status-pill"><span class="dot" aria-hidden="true"></span> Private beta · launching fall 2026</span>
+  </header>
+
+  <main>
+
+    <section class="card hero">
+      <p class="eyebrow">Opening new paths for First Nations, Inuit and Métis entrepreneurs</p>
+      <h1>Find the <span class="accent">government funding</span> and contracts worth your time — matched to your business.</h1>
+      <p class="lede">
+        Ohahase pulls open government tender and funding data into one place, filters it for
+        Indigenous set-asides and preferences, and explains in plain language why a given
+        opportunity does or does not fit your business.
+      </p>
+      <p class="meaning">
+        <strong style="color: var(--text-primary); font-weight: 600;">Ohahase</strong> is
+        Kanien&rsquo;kéha (Mohawk) for <em>new path</em> — because that is the work.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Why it exists</h2>
+      <p>
+        The federal government has committed to directing at least 5% of contract value to
+        Indigenous businesses through the Procurement Strategy for Indigenous Business. Meeting
+        that target depends on Indigenous suppliers actually finding the notices they are eligible
+        for — which today means watching several portals that were never designed to be watched
+        together.
+      </p>
+      <p>
+        A great deal of the most relevant work never reaches those portals at all. First Nations
+        infrastructure, housing and community RFPs are often posted once, on one organisation&rsquo;s
+        own website, and the businesses best placed to bid on them simply never hear about it.
+      </p>
+
+      <div class="grid">
+        <div class="tile">
+          <h3>One place to look</h3>
+          <p>Federal grants, contributions and CanadaBuys tenders, gathered and kept current.</p>
+        </div>
+        <div class="tile">
+          <h3>Matched, not just listed</h3>
+          <p>Filtered against what your business actually does, so the list stays short and real.</p>
+        </div>
+        <div class="tile">
+          <h3>Explained in plain language</h3>
+          <p>Every match says why it fits — and when it doesn&rsquo;t, it says that too.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card sources">
+      <h2>If we&rsquo;ve written to you about your RFPs</h2>
+      <p>
+        Ohahase only lists opportunities from sources that have either published under an open
+        licence or told us in writing that we may. Where the rights aren&rsquo;t clear, we ask first —
+        even when the information is sitting there in public.
+      </p>
+      <p>
+        When an organisation says yes, what we show is the title, the closing date and a link
+        straight back to the original posting. We don&rsquo;t reproduce tender documents, and every
+        link sends people to you. If you&rsquo;d rather simply tell us when something goes up, that
+        works too.
+      </p>
+      <div class="contact-row">
+        <a class="btn btn-primary" href="mailto:geminimatrixinc@gmail.com?subject=Ohahase%20%E2%80%94%20RFP%20listings">Get in touch</a>
+        <a class="btn btn-secondary" href="https://geminimatrixinc.com/" target="_blank" rel="noopener noreferrer">About Gemini Matrix</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Who&rsquo;s behind it</h2>
+      <p>
+        Ohahase is a service of
+        <a class="inline" href="https://geminimatrixinc.com/" target="_blank" rel="noopener noreferrer">Gemini Matrix Inc.</a>,
+        an Indigenous-owned company based in Ohsweken, Six Nations of the Grand River. It is built
+        from inside the community it serves rather than sold into it from outside.
+      </p>
+      <p>
+        It is in private beta now and launching this fall. There is nothing to sign up for yet — if
+        you&rsquo;d like to see it when it opens, or you have work you think belongs in it, just say so.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site">
+    <p>&copy; 2026 Gemini Matrix Inc. · Ohsweken, Six Nations of the Grand River</p>
+    <p><a class="inline" href="mailto:geminimatrixinc@gmail.com">geminimatrixinc@gmail.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
